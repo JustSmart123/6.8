@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f8f9fa;
     color: #333;
   }
   
   header {
     text-align: center;
-    background-color: #673ab7;
+    background-color: #6c757d;
     color: #fff;
     padding: 20px;
   }
@@ -19,6 +19,7 @@ body {
   
   h1 {
     font-size: 2.5em;
+    margin: 10px 0;
   }
   
   main {
@@ -26,20 +27,31 @@ body {
   }
   
   main h2 {
-    color: #673ab7;
+    color: #6c757d;
   }
   
-  section img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 10px auto;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .gallery figure {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
   }
   
