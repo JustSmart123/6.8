@@ -1,64 +1,138 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Колекція дивовижних ілюзій картинок, які вражають вашу уяву. Відкрийте для себе світ візуальних обманів!">
-  <meta name="keywords" content="ілюзії, візуальні ілюзії, мистецтво, картинки, обмани зору">
-  <title>Ілюзії Картинок</title>
-
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Ілюзії Картинок">
-  <meta property="og:description" content="Пориньте у світ ілюзій картинок, які дивують і обманюють зір.">
-  <meta property="og:image" content="images/logo.jpg">
-  <meta property="og:url" content="https://ваш-сайт.github.io/">
-  <meta property="og:type" content="website">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXXX-X');
-  </script>
-
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея оптичних ілюзій: відкрийте дивовижний світ візуальних загадок. Чи вірите ви своїм очам?">
+    <meta name="keywords" content="оптичні ілюзії, зорові обмани, візуальні ефекти, цікаві факти">
+    <meta name="author" content="Optical Illusions Team">
+    <title>Не вір своїм очам - Галерея оптичних ілюзій</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="images/illusion1.jpg" as="image">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #ff00ff, #0000ff);
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid img {
+            width: 300px;
+            height: auto;
+            border: 5px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        .grid img:hover {
+            transform: scale(1.1);
+        }
+        form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        form label, form input, form textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #fff;
+            background: #333;
+            color: #fff;
+        }
+        form button {
+            background: #ff00ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #0000ff;
+        }
+        footer {
+            background: linear-gradient(90deg, #0000ff, #ff00ff);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="images/logo.jpg" alt="Логотип Ілюзій Картинок" width="80">
-    <h1>Ілюзії Картинок</h1>
-    <p>Відкрийте для себе загадковий світ візуальних обманів.</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Що таке візуальні ілюзії?</h2>
-      <p>Візуальні ілюзії — це зображення, які викликають у нас обман зору. Вони кидають виклик нашому розумінню простору, кольору та форми.</p>
-    </section>
-
-    <section>
-      <h2>Колекція ілюзій</h2>
-      <div class="gallery">
-        <figure>
-          <img src="images/illusion1.jpg" alt="Ілюзія з рухомими колами">
-          <figcaption>Ілюзія руху: здається, що кола рухаються.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/illusion2.jpg" alt="Качка чи заєць?">
-          <figcaption>Качка чи заєць? Що ви бачите першими?</figcaption>
-        </figure>
-        <figure>
-          <img src="images/illusion3.jpg" alt="Ваза чи два обличчя?">
-          <figcaption>Ваза чи два обличчя? Оптичний двозначний образ.</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Ілюзії Картинок. Усі права захищено.</p>
-  </footer>
+    <header>
+        <h1>Не вір своїм очам</h1>
+        <p>Галерея неймовірних оптичних ілюзій</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Про проєкт</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>Про проєкт</h2>
+            <p>Чи можете ви завжди довіряти своїм очам? Оптичні ілюзії змушують мозок сприймати світ по-іншому. Досліджуйте нашу галерею!</p>
+        </section>
+        
+        <section id="gallery">
+            <h2>Галерея ілюзій</h2>
+            <div class="grid">
+                <img src="images/ilusion2.png" alt="Оптична ілюзія 1" loading="lazy">
+                <img src="images/Ilusion1.png" alt="Оптична ілюзія 2" loading="lazy">
+                <img src="images/ilusion3.png" alt="Оптична ілюзія 3" loading="lazy">
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Зв'яжіться з нами</h2>
+            <form action="#" method="post">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Не вір своїм очам. Всі права захищені.</p>
+    </footer>
 </body>
 </html>
